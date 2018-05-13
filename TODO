@@ -1,0 +1,20 @@
+
+- Maybe add support for sqlite and other backend (think about using
+   libgda if it is needed/better/cleaner)
+
+- Refactor code (yes, it is awful now, I know)
+
+- Clean glade Interface
+
+- add ongoing connection logging (look at ioctl? start time from db
+   not closed? timer ticker for update? yes, just that and 4 field in
+   interface for current connection time,traffic,time cost, traffic
+   cost ... how to manage more ongoing connection??? ComboBox)
+
+- remove X K/M/Gbytes from traffic (text+combo) per cost
+
+- say more "ciao", "buongiorno", "arrivederci", etc. : it is good in
+   general
+
+- write a poem
+

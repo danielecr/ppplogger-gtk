@@ -1,0 +1,23 @@
+This is ppplogger-gtk.
+
+ppplogger-gtk report pppd log and does simple calc on traffic and time
+consume of connection (billing calculation).
+
+It is named -gtk even if it use libgnomeui (due to lack of GnomeDate
+widget in Gtk) and gconfd system for storing database connection data
+(keys: /apps/ppplogger/dbcon/x)
+
+You need the companion program pppd-logger in order to update database
+with pppd connections. It also require a MySql database correctly
+setted up.
+
+Just ./configure; make; make install
+
+
+If you find error, have suggestions, things to add, or any comment,
+please contact me at daniele@smartango.com .
+
+For license and distribution terms look at COPYING file.
+
+Enjoy,
+Daniele.

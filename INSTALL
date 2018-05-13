@@ -1,0 +1,7 @@
+./configure
+make
+make install
+
+make uninstall # if you do not like it
+
+install pppd-logger deamon somewhere to fill some mysql db with log

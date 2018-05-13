@@ -1,0 +1,29 @@
+dnl Process this file with autoconf to produce a configure script.
+
+dnl AC_INIT(configure.in)
+AC_INIT(ppplogger-gtk,0.3)
+AM_INIT_AUTOMAKE(ppplogger-gtk, 0.3)
+dnl AM_INIT_AUTOMAKE
+AC_CONFIG_HEADER(config.h)
+dnl AM_MAINTAINER_MODE
+
+dnl AM_CFLAGS("-export-dynamic")
+
+AC_ISC_POSIX
+AC_PROG_CC
+dnl AM_PROG_CC_STDC
+AC_HEADER_STDC
+AC_CHECK_HEADERS([stdio.h unistd.h errno.h string.h])
+
+AC_PATH_PROG(MYSQL_CONFIG,mysql_config)
+AC_CHECK_PROG(EXIST_MYSQL,mysql_config,"yes","no")
+if test x"$EXIST_MYSQL" != xyes; then
+AC_MSG_ERROR('mysql_config not found'); fi;
+
+PKG_CHECK_MODULES(PACKAGE, [gtk+-2.0 libglade-2.0 libgnomeui-2.0 ])
+AC_SUBST(PACKAGE_CFLAGS)
+AC_SUBST(PACKAGE_LIBS)
+
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
+
