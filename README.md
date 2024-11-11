@@ -17,3 +17,7 @@ So, this code may have just historical interest, or it may be of use
 for some specific system that does not have resource or compatibility
 with the up-to-date software available.
 
+See also:
+
+* [scripts/README.md](scripts/README.md)
+* [README](README)
