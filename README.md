@@ -21,3 +21,12 @@ See also:
 
 * [scripts/README.md](scripts/README.md)
 * [README](README)
+
+## Original project page
+
+This is the page for the project:
+- https://repository.smartango.com/pppd-logger/
+- https://repository.smartango.com/
+
+In 2004 git was not a thing, github.com neither. Debian and apt-get was already there.
+Does not sounds crazy how long a technology stay alive when it is well designed?
